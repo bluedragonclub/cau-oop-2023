@@ -4,7 +4,7 @@
 
 - In this assignment, we aim to write a simple math library.
 
-- The submission deadline is <span style="color:red">**October 10, 2023 at 23:59**</span>. 
+- The submission deadline is <span style="color:red">**October 3, 2023 at 23:59**</span>. 
 
 - All declarations such as function prototypes, structures, etc should be written in **"mathlib.h"** header file, and function definitions (i.e., function bodies) should be written in **"mathlib.cpp"** source file.
 
