@@ -6,11 +6,11 @@
 
 - The submission deadline is <span style="color:red">**October 10, 2023 at 23:59**</span>. 
 
-- All declarations such as function prototypes, structures, etc should be written in **""vector3d.h"** header file, and function definitions (i.e., function bodies) should be written in **""vector3d.cpp"** source file.
+- All declarations such as function prototypes, structures, etc should be written in **"vector3d.h"** header file, and function definitions (i.e., function bodies) should be written in **"vector3d.cpp"** source file.
 
-- In the evaluation system, the file names, ""vector3d.h" and ""vector3d.cpp", are used, thus your submission will <span style="color:red">**NOT**</span> be recognized by the system <span style="color:red">**if you change the file names**</span>.
+- In the evaluation system, the file names, "vector3d.h" and "vector3d.cpp", are used, thus your submission will <span style="color:red">**NOT**</span> be recognized by the system <span style="color:red">**if you change the file names**</span>.
 
-- Submit the two files, ""vector3d.h" and ""vector3d.cpp", to the codePost system. <span style="color:red">**DO NOT**</span> include a file that contains **main** function.
+- Submit the two files, "vector3d.h" and "vector3d.cpp", to the codePost system. <span style="color:red">**DO NOT**</span> include a file that contains **main** function.
 
 - You **CANNOT** use the C++ standard library unless the headers are explicitly specified. You can include "cmath" header in "mathlib.cpp" to use `sqrt`, `pow`, `fabs`, `acos`, and etc.
 
