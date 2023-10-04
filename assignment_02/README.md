@@ -12,9 +12,9 @@
 
 - Submit the two files, "vector3d.h" and "vector3d.cpp", to the codePost system. <span style="color:red">**DO NOT**</span> include a file that contains **main** function.
 
-- You **CANNOT** use the C++ standard library unless the headers are explicitly specified. You can include "cmath" header in "mathlib.cpp" to use `sqrt`, `pow`, `fabs`, `acos`, and etc.
+- You **CANNOT** use the C++ standard library unless the headers are explicitly specified. You can include `<cmath>` header in "vector3d.cpp" to use `sqrt`, `pow`, `fabs`, `acos`, and etc.
 
-- Collaborate with your colleagues to write and share test cases in main function. <span style="color:red">However, any plagiarism is not allowed.</span> Plagiarism will be checked by automatic methods in the system.
+- Collaborate with your colleagues to write and share test cases in `main` function. <span style="color:red">**However, any plagiarism is not allowed.**</span> Plagiarism will be checked by automatic methods in the system.
 
 
 - Your files and codes might look like:
@@ -43,6 +43,7 @@
     {
     // Implement the function...
     }
+    
     // omitted...
     ```
 
@@ -278,7 +279,7 @@ v_1 = (1.0, 2.0, 3.0), \ v_2 = (2.0, 4.0, 6.0)
 v_1 - v_2 = (-1.0, -2.0, -3.0)\\
 $$
 
-#### (h) Write `vector3d_mul` function for `Vector3d` structure. [5pts]
+#### (k) Write `vector3d_mul` function for `Vector3d` structure. [5pts]
 ```C++
 Vector3d vector3d_mul(Vector3d v1, Vector3d v2);
 ```
@@ -352,9 +353,9 @@ This function calculates the angle between two vectors based on the formula of i
 The unit of angle is radian if `radian`` parameter is true, otherwise the unit of angle should be degree. 
 
 
-<center>
+<p align="center">
     <img src="fig01.jpg" width="400px">
-</center>
+</p>
 </br>
 
 These are some examples of how to calculate the angle.
@@ -381,15 +382,15 @@ Vector3d vector3d_indiv(Vector3d v1, Vector3d v2, double m, double n);
 
 This function finds the internal division vector between two vectors with the ratio $m : n$. 
 
-<center>
+<p align="center">
     <img src="fig02.jpg" width="220px">
-</center>
+</p>
 </br>
 
 The internal division of two vectors is defined by the following equation:
 
 $$
-v_3 := (m \cdot v_2 + n \cdot v_1) / (m + n) \\[10pt]
+v_3 := (m \cdot v_2 + n \cdot v_1) / (m + n) \\
 \rightarrow \
 (x_3, \ y_3, \ z_3) := \Big(\frac{m \cdot x_2 + n \cdot x_1}{m + n}, \ \frac{m \cdot y_2 + n \cdot y_1}{m + n}, \ \frac{m \cdot z_2 + n \cdot z_1}{m + n} \Big)
 $$
@@ -410,15 +411,15 @@ Vector3d vector3d_exdiv(Vector3d v1, Vector3d v2, double m, double n);
 This function finds the external division vector between two vectors with the ratio $m : n$. Note that there are two cases as follows. 
 
 
-<center>
+<p align="center">
     <img src="fig03.jpg" width="500px">
-</center>
+</p>
 </br>
 
 The external division of two vectors is defined by the following equation:
 
 $$
-v_3 := (m \cdot v_2 - n \cdot v_1) / (m - n) \\[10pt]
+v_3 := (m \cdot v_2 - n \cdot v_1) / (m - n)
 \rightarrow \
 (x_3, \ y_3, \ z_3) := \Big(\frac{m \cdot x_2 - n \cdot x_1}{m - n}, \ \frac{m \cdot y_2 - n \cdot y_1}{m - n}, \ \frac{m \cdot z_2 - n \cdot z_1}{m - n} \Big)
 $$
@@ -427,13 +428,8 @@ These are some examples of how to calculate the external division.
 
 $$
 \begin{align*}
-& v_1 = (1, 2, -3), \ v_2 = (-2, 4, 5), \ m = 3, \ n = 2
-\ \rightarrow \ 
-v_3 = (-8, 8, 21)\\
-
-& v_1 = (1, 2, -3), \ v_2 = (-2, 4, 5), \ m = 2, \ n = 3
-\ \rightarrow \ 
-v_3 = (7, -2, -19)
+& v_1 = (1, 2, -3), \ v_2 = (-2, 4, 5), \ m = 3, \ n = 2 \ \rightarrow \ v_3 = (-8, 8, 21) \\
+& v_1 = (1, 2, -3), \ v_2 = (-2, 4, 5), \ m = 2, \ n = 3 \ \rightarrow \ v_3 = (7, -2, -19)
 \end{align*}
 $$
 
@@ -452,45 +448,43 @@ double vector3d_distance(Vector3d v1, Vector3d v2);
 The distance between two vectors is defined by the following equation:
 
 $$
-distance(v_1, v_2) = \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2 }
+distance(v_1, v_2) := \sqrt{ (x_1 - x_2)^2 + (y_1 - y_2)^2 + (z_1 - z_2)^2 }
 $$
 
 These are some examples of how to calculate the external division.
 
 $$
 \begin{align*}
-& v_1 = (1, 2, 5), \ v_2 = (4, 2, 1) 
-\ \rightarrow \ 
-distance(v_1, v_2) = 5.0\\
-
-& v_1 = (3, 0, 0), \ v_2 = (0, 0, 4) 
-\ \rightarrow \ 
-distance(v_1, v_2) = 5.0
+v_1 = (1, 2, 5), \ v_2 = (4, 2, 1) \ \rightarrow \ distance(v_1, v_2) = 5.0\\
+v_1 = (3, 0, 0), \ v_2 = (0, 0, 4) \ \rightarrow \ distance(v_1, v_2) = 5.0
 \end{align*}
 $$
 
 #### (b) Write `vector3d_nearest` function. [5pts]
-
+```C++
+double vector3d_distance(Vector3d v1, Vector3d v2);
+```
 This function finds the vector nearest to a given vector, and returns the index of an array. The index of the first element must be returned if the same vectors exists in the array. 
-  int vector3d_nearest(Vector3d v, Vector3d arr[], int n);
 
 #### (c) Write `vector3d_farthest`` function. [5pts]
-
+```C++
+int vector3d_farthest(Vector3d v, Vector3d arr[], int n);
+```
 This function finds the vector farthest to a given vector, and returns the index of an array. The index of the first element must be returned if the same vectors exists in the array. 
-  int vector3d_farthest(Vector3d v, Vector3d arr[], int n);
 
 ####  (d) Write `vector3d_min_distance`` function. [5pts]
+```C++
+double vector3d_min_distance(Vector3d arr[], int n);
+```
 This function calculates the minimum distance among all possible pairs of vectors. You need to initialize a variable for the minimum distance with the maximum possible value. So, use “<cfloat>” header to get the maximum value of double type, “DBL_MAX”. 
-  double vector3d_min_distance(Vector3d arr[], int n);
 
 ####  (e) Write `vector3d_max_distance` function. [5pts]
-
+```C++
+double vector3d_max_distance(Vector3d arr[], int n);
+```
 This function calculates the maximum distance among all possible pairs of vectors. 
-  double vector3d_max_distance(Vector3d arr[], int n);
 
-
-
-The following is an example of utilizing the distance functions:
+The following code shows an example of utilizing the distance functions:
 
 ```C++
 #include <iostream>
