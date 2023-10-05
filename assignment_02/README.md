@@ -10,7 +10,7 @@
 
 - In the evaluation system, the file names, "vector3d.h" and "vector3d.cpp", are used, thus your submission will <span style="color:red">**NOT**</span> be recognized by the system <span style="color:red">**if you change the file names**</span>.
 
-- Submit the two files, "vector3d.h" and "vector3d.cpp", to the codePost system. <span style="color:red">**DO NOT**</span> include a file that contains **main** function.
+- Submit the two files, "vector3d.h" and "vector3d.cpp", to the BDC system. <span style="color:red">**DO NOT**</span> include a file that contains **main** function.
 
 - You **CANNOT** use the C++ standard library unless the headers are explicitly specified. You can include `<cmath>` header in "vector3d.cpp" to use `sqrt`, `pow`, `fabs`, `acos`, and etc.
 
