@@ -304,7 +304,7 @@ $$
 
 Write functions for more advanced operations. The `Vector3d` structure is the same as that of **Problem (1)**.
 
-#### (a) Write `vector3d_inner`` function for `Vector3d`` structure. [5pts]
+#### (a) Write `vector3d_inner` function for `Vector3d` structure. [5pts]
 ```C++
 double vector3d_inner(Vector3d v1, Vector3d v2);
 ```
@@ -324,7 +324,7 @@ v_1 \cdot v_2 = -2 + 8 -15 = -9\\
 $$
 
 
-#### (b) Write `vector3d_cross`` function for `Vector3d`` structure. [5pts]
+#### (b) Write `vector3d_cross` function for `Vector3d` structure. [5pts]
 ```C++
 Vector3d vector3d_cross(Vector3d v1, Vector3d v2);
 ```
@@ -350,7 +350,7 @@ double vector3d_angle(Vector3d v1, Vector3d v2, bool radian=true);
 ```
 
 This function calculates the angle between two vectors based on the formula of inner product.
-The unit of angle is radian if `radian`` parameter is true, otherwise the unit of angle should be degree. 
+The unit of angle is radian if `radian` parameter is true, otherwise the unit of angle should be degree. 
 
 
 <p align="center">
@@ -374,7 +374,7 @@ const double pi = std::acos(-1));
 ```
 
 
-#### (d) Write `vector3d_indiv`` function for `Vector3d` structure. [5pts]
+#### (d) Write `vector3d_indiv` function for `Vector3d` structure. [5pts]
 
 ```C++
 Vector3d vector3d_indiv(Vector3d v1, Vector3d v2, double m, double n);
@@ -462,21 +462,21 @@ $$
 
 #### (b) Write `vector3d_nearest` function. [5pts]
 ```C++
-double vector3d_distance(Vector3d v1, Vector3d v2);
+int vector3d_nearest(Vector3d v, Vector3d arr[], int n);
 ```
 This function finds the vector nearest to a given vector, and returns the index of an array. The index of the first element must be returned if the same vectors exists in the array. 
 
-#### (c) Write `vector3d_farthest`` function. [5pts]
+#### (c) Write `vector3d_farthest` function. [5pts]
 ```C++
 int vector3d_farthest(Vector3d v, Vector3d arr[], int n);
 ```
 This function finds the vector farthest to a given vector, and returns the index of an array. The index of the first element must be returned if the same vectors exists in the array. 
 
-####  (d) Write `vector3d_min_distance`` function. [5pts]
+####  (d) Write `vector3d_min_distance` function. [5pts]
 ```C++
 double vector3d_min_distance(Vector3d arr[], int n);
 ```
-This function calculates the minimum distance among all possible pairs of vectors. You need to initialize a variable for the minimum distance with the maximum possible value. So, use “<cfloat>” header to get the maximum value of double type, “DBL_MAX”. 
+This function calculates the minimum distance among all possible pairs of vectors. You need to initialize a variable for the minimum distance with the maximum possible value. 
 
 ####  (e) Write `vector3d_max_distance` function. [5pts]
 ```C++
