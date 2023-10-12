@@ -140,7 +140,7 @@ Vector3d Sub(double c) const;
 Vector3d Sub(const Vector3d& v2) const;
 Vector3d Mul(double c) const;
 Vector3d Mul(const Vector3d& v2) const;
-Vector3d Div(double c) const;
+Vector3d Div(double c) const;  // vector3d_div(Vector3d v, double c)
 Vector3d Div(const Vector3d& v2) const;
 ```
 
