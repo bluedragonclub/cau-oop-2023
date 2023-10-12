@@ -4,7 +4,7 @@
 
 - In this assignment, we aim to rewrite the `Vector3d` structure as a C++ class.
 
-- The submission deadline is <span style="color:red">**October 10, 2023 at 23:59**</span>. 
+- The submission deadline is <span style="color:red">**October 19, 2023 at 23:59**</span>. 
 
 - All declarations such as function prototypes, structures, classes, etc should be written in **"Vector3d.h"** header file, and function definitions (i.e., function bodies) should be written in **"Vector3d.cpp"** source file. Note that the first characters of the file names are capitalized.
 
